@@ -46,7 +46,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+#### Github-pages deploy
+
+ember-cli-github-pages is installed. Main branch is develop, and the built site is deployed to master branch via `npm run gh-publish` followed by `git push origin master`
 
 ## Further Reading / Useful Links
 
