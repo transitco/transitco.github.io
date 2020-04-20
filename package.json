@@ -2,7 +2,7 @@
   "name": "transitco-github-io",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for transitco-github-io goes here",
+  "description": "TransitCo main site",
   "repository": "",
   "license": "MIT",
   "author": "",
@@ -17,7 +17,8 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "npm-run-all lint:* test:*",
-    "test:ember": "ember test"
+    "test:ember": "ember test",
+    "gh-publish": "ember github-pages:commit --branch master"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.3.0",
