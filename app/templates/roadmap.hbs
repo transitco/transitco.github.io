@@ -12,10 +12,8 @@
 
 <h2>The Roadmap</h2>
 
-{{# each @model.issues as |issue|}}
-    <li>
-        <strong>{{issue.title}}</strong>
-    </li>
+{{# each @model.milestones as |milestone|}}
+        <h3>{{milestone.title}}</h3>
 {{/each}}
 </div>
 {{outlet}}
