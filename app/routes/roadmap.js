@@ -1,10 +1,10 @@
 import Route from '@ember/routing/route';
-
+import RSVP from 'rsvp';
 export default class RoadmapRoute extends Route {
-    async model(){
-        const response = await fetch('https://api.github.com/repos/transitco/roadmap/milestones');
-        const milestones = await response.json();
-
-        return {milestones};
+    model(){
+        return RSVP.hash({
+            milestones: fetch('https://api.github.com/repos/transitco/roadmap/milestones'),
+            issues: fetch('https://api.github.com/repos/transitco/roadmap/issues')
+        })
     }
 }
