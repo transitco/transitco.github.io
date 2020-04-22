@@ -11,7 +11,11 @@
 <p>This great roadmap methodology is inspired by Docker: https://github.com/docker/roadmap</p>
 
 <h2>The Roadmap</h2>
-    {{!-- <div id="root"></div>
-    <script src="getissues.js"></script> --}}
-    </div>
+
+{{# each @model.issues as |issue|}}
+    <li>
+        <strong>{{issue.title}}</strong>
+    </li>
+{{/each}}
+</div>
 {{outlet}}
