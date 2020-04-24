@@ -1,3 +1,5 @@
+![CI](https://github.com/transitco/transitco.github.io/workflows/CI/badge.svg)
+
 # transitco-github-io
 
 This README outlines the details of collaborating on this Ember application.
