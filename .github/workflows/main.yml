@@ -21,5 +21,9 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: build
-      run: ember build --environment=production
+    - name: install, build, test
+      run: |
+        npm install -g ember-cli
+        npm install
+        ember build --environment=production
+        ember test
