@@ -50,6 +50,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ember-cli-github-pages is installed. Main branch is develop, and the built site is deployed to master branch via `npm run gh-publish` followed by `git push origin master`
 
+## Docker
+
+* `docker build . -t transitco`
+* `docker-compose up -d`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+
+
 ## Further Reading / Useful Links
 
 * [ember.js](https://emberjs.com/)

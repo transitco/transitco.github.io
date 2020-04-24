@@ -1,0 +1,11 @@
+node_modules/
+.gitignore
+.eslintrc
+.ember-cli
+.eslintignore
+.template-lintrc.js
+.travis.yml
+.watchmanconfig
+docker-compose*
+Dockerfile*
+README.md
