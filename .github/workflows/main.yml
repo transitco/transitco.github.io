@@ -26,9 +26,9 @@ jobs:
         npm install
         ember build --environment=production
         
-    - name: deploy
-      run: |
-        git fetch
-        git checkout master
-        npm run gh-publish
-        git commit origin master:master
+    # - name: deploy
+    #   run: |
+    #     git fetch
+    #     git checkout master
+    #     npm run gh-publish
+    #     git commit origin master:master
