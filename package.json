@@ -19,7 +19,7 @@
     "test": "npm-run-all lint:* test:*",
     "test:ember": "ember test",
     "gh-publish": "ember github-pages:commit --branch master",
-    "deploy": "ember build --environment production && ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\" --branch master && git push origin master"
+    "gh-deploy": "ember github-pages:commit --message \'Deploy gh-pages from commit $(git rev-parse HEAD)\' --branch master"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.3.0",
